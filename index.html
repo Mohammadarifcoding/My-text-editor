@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6c9c8f09de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+    
+    .text-bold{
+      font-weight: bold;
+    }
+    .text-italic{
+      font-style: italic;
+    }
+    .text-underline{
+      text-decoration: underline;
+    }
+    
+
+
+    </style>
+  </head>
+  <body>
+    <div class="rounded-xl mt-10 w-5/6 mx-auto bg-blue-300 px-8 py-4">
+      <h1 class="text-center text-xl font-bold mb-5">My Text Editor</h1>
+      <div
+        class="rounded-xl mt-10 border-2 border-black mx-auto bg-blue-200 py-5 px-3"
+      >
+        <nav class="flex justify-between px-20 items-center mx-auto mb-3">
+          <!-- 1st section -->
+          <div class="space-x-1">
+            <button class="py-1 px-3 " id="bold">
+              <i class="fa-solid fa-bold"></i>
+            </button>
+            <button class="py-1 px-3 " id="italic">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button class="py-1 px-3 " id="underline">
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+
+          <!-- 2nd section-->
+
+          <div class="space-x-1">
+            <button class="py-1 px-3  " id="align-left">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="py-1 px-3 " id="align-center">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="py-1 px-3 " id="align-right">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button class="py-1 px-3 " id="align-justify">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+          </div>
+
+          <!-- 3rd section -->
+
+          <div class="space-x-1 flex items-center">
+            <input type="number" class="w-[50px]" id="fontSize" />
+
+            <button class="py-1 px-3 " id="font">
+              <img src="font.png" alt="" class="w-[35px]" />
+            </button>
+            <input type="color" class="w-[60px]" id="color" />
+          </div>
+        </nav>
+
+        <hr class="bg-black text-black h-1" />
+
+        <div class="flex justify-between px-20 mt-10 items-center mx-auto">
+          <textarea
+            name=""
+            id="textArea"
+            rows=""
+            class="flex justify-center w-full rounded-md h-[340px]  p-3"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="components.js"></script>
+  <script src="other.js"></script>
+  </body>
+</html>
